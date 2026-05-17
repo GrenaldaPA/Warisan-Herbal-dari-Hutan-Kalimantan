@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Warisan Herbal dari Hutan Kalimantan</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      background:#F5F1E8;
+      color:#2F3E2E;
+      line-height:1.8;
+    }
+
+    nav{
+      width:100%;
+      background:#3A5A40;
+      padding:18px 40px;
+      position:fixed;
+      top:0;
+      left:0;
+      z-index:1000;
+
+      display:flex;
+      justify-content:center;
+      gap:35px;
+      flex-wrap:wrap;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      font-weight:500;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#DAD7CD;
+    }
+
+    header{
+      width:100%;
+      min-height:100vh;
+
+      background:
+      linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+      url('https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=1600&auto=format&fit=crop');
+
+      background-size:cover;
+      background-position:center;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+
+      padding:120px 20px;
+      color:white;
+    }
+
+    .hero{
+      max-width:850px;
+    }
+
+    .hero h1{
+      font-size:65px;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      font-size:20px;
+    }
+
+    section{
+      padding:90px 10%;
+    }
+
+    h2{
+      font-size:42px;
+      margin-bottom:25px;
+      color:#3A5A40;
+    }
+
+    .intro{
+      background:white;
+      border-radius:20px;
+      padding:35px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .herbal-container{
+      display:flex;
+      flex-direction:column;
+      gap:35px;
+      margin-top:40px;
+    }
+
+    .herbal-card{
+      background:white;
+      border-radius:22px;
+      overflow:hidden;
+      box-shadow:0 5px 18px rgba(0,0,0,0.08);
+    }
+
+    .herbal-card img{
+      width:100%;
+      height:320px;
+      object-fit:cover;
+    }
+
+    .content{
+      padding:30px;
+    }
+
+    .content h3{
+      color:#3A5A40;
+      margin-bottom:18px;
+      font-size:30px;
+    }
+
+    .content h4{
+      margin-top:20px;
+      margin-bottom:10px;
+      color:#588157;
+    }
+
+    .content ul{
+      padding-left:22px;
+      margin-top:10px;
+    }
+
+    .content li{
+      margin-bottom:8px;
+    }
+
+    .referensi{
+      background:white;
+      border-radius:20px;
+      padding:30px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .referensi a{
+      color:#3A5A40;
+      text-decoration:none;
+      display:block;
+      margin-bottom:12px;
+      word-break:break-word;
+    }
+
+    .referensi a:hover{
+      text-decoration:underline;
+    }
+
+    .biodata{
+      background:#DAD7CD;
+      border-radius:20px;
+      padding:35px;
+      margin-top:40px;
+    }
+
+    .biodata p{
+      margin-bottom:10px;
+    }
+
+    footer{
+      background:#3A5A40;
+      color:white;
+      text-align:center;
+      padding:25px;
+      margin-top:50px;
+    }
+
+    @media(max-width:768px){
+
+      nav{
+        gap:15px;
+        padding:18px;
+      }
+
+      .hero h1{
+        font-size:42px;
+      }
+
+      .hero p{
+        font-size:17px;
+      }
+
+      h2{
+        font-size:32px;
+      }
+
+      .content h3{
+        font-size:25px;
+      }
+
+      .herbal-card img{
+        height:240px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#pengantar">Pengantar</a>
+    <a href="#herbal">Herbal</a>
+    <a href="#referensi">Referensi</a>
+    <a href="#penulis">Biodata</a>
+    <a href="#penutup">Penutup</a>
+  </nav>
+
+  <header id="home">
+
+    <div class="hero">
+
+      <h1>Warisan Herbal dari Hutan Kalimantan</h1>
+
+      <p>
+        Mengenal kekayaan tanaman herbal tradisional di hutan Kalimantan yang diwariskan secara turun-temurun sebagai bagian dari budaya dan pengobatan alami.
+      </p>
+
+    </div>
+
+  </header>
+
+  <section id="pengantar">
+
+    <h2>Pengantar</h2>
+
+    <div class="intro">
+
+      <p>
+        Pulau Kalimantan terdiri dari lima provinsi yang memiliki kekayaan sumber daya alam melimpah. Hutan tropis Kalimantan menjadi salah satu paru-paru dunia sekaligus rumah bagi berbagai tumbuhan herbal tradisional yang dimanfaatkan masyarakat sejak dahulu.
+      </p>
+
+      <br>
+
+      <p>
+        Dari Kalimantan Barat hingga Kalimantan Utara, masyarakat memanfaatkan hasil hutan sebagai bagian dari kehidupan sehari-hari, termasuk dalam bidang pengobatan tradisional. Berbagai tanaman herbal tumbuh alami di kawasan hutan tropis dan dipercaya memiliki manfaat bagi kesehatan tubuh.
+      </p>
+
+      <br>
+
+      <p>
+        Pengetahuan mengenai tanaman obat diwariskan secara turun-temurun dan menjadi bagian penting dari budaya masyarakat Kalimantan. Banyak tanaman herbal digunakan sebagai ramuan tradisional untuk menjaga kesehatan, meningkatkan stamina, hingga membantu mengatasi berbagai keluhan kesehatan secara alami.
+      </p>
+
+    </div>
+
+  </section>
+
+  <section id="herbal">
+
+    <h2>Warisan Herbal di Hutan Kalimantan</h2>
+
+    <div class="herbal-container">
+
+      <!-- BAJAKAH -->
+      <div class="herbal-card">
+
+        <img src="akar_bajakah.png">
+
+        <div class="content">
+
+          <h3>1. Akar Bajakah</h3>
+
+          <h4>Deskripsi</h4>
+
+          <p>
+            Akar bajakah merupakan tanaman herbal khas hutan Kalimantan yang telah lama digunakan oleh masyarakat Dayak sebagai obat tradisional alami. Tanaman ini tumbuh merambat di hutan tropis dan dikenal memiliki batang kuat menyerupai akar kayu besar.
+          </p>
+
+          <h4>Kandungan Senyawa</h4>
+
+          <ul>
+            <li>Flavonoid</li>
+            <li>Saponin</li>
+            <li>Tanin</li>
+            <li>Alkaloid</li>
+            <li>Fenolik</li>
+            <li>Triterpenoid</li>
+          </ul>
+
+          <h4>Manfaat Tradisional</h4>
+
+          <ul>
+            <li>Membantu meningkatkan daya tahan tubuh</li>
+            <li>Membantu mengurangi peradangan</li>
+            <li>Membantu mempercepat penyembuhan luka</li>
+            <li>Membantu melawan radikal bebas</li>
+          </ul>
+
+          <h4>Cara Penggunaan</h4>
+
+          <p>
+            Biasanya akar bajakah direbus hingga air berubah warna kecokelatan lalu diminum sebagai ramuan herbal tradisional.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- AKAR KUNING -->
+      <div class="herbal-card">
+
+        <img src="Akar-kuning.jpeg">
+
+        <div class="content">
+
+          <h3>2. Akar Kuning</h3>
+
+          <h4>Deskripsi</h4>
+
+          <p>
+            Akar kuning merupakan tanaman herbal khas Kalimantan yang banyak ditemukan di daerah hutan tropis lembap. Tanaman ini sering digunakan masyarakat Dayak sebagai bahan ramuan tradisional alami.
+          </p>
+
+          <h4>Kandungan Senyawa</h4>
+
+          <ul>
+            <li>Berberin</li>
+            <li>Flavonoid</li>
+            <li>Alkaloid</li>
+            <li>Saponin</li>
+            <li>Steroid alami</li>
+          </ul>
+
+          <h4>Manfaat Tradisional</h4>
+
+          <ul>
+            <li>Membantu menjaga kesehatan hati</li>
+            <li>Membantu meningkatkan sistem imun</li>
+            <li>Membantu mengurangi peradangan</li>
+            <li>Membantu melawan infeksi</li>
+          </ul>
+
+          <h4>Cara Penggunaan</h4>
+
+          <p>
+            Akar dipotong kecil-kecil lalu direbus hingga mendidih dan diminum sebagai minuman herbal.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- CEPLUKAN -->
+      <div class="herbal-card">
+
+        <img src="ceplukan.jpg">
+
+        <div class="content">
+
+          <h3>3. Ceplukan</h3>
+
+          <h4>Deskripsi</h4>
+
+          <p>
+            Ceplukan merupakan tanaman herbal liar yang tumbuh di daerah tropis termasuk Kalimantan. Buahnya kecil berwarna kuning jingga dengan rasa manis sedikit asam.
+          </p>
+
+          <h4>Kandungan Nutrisi</h4>
+
+          <ul>
+            <li>Vitamin C</li>
+            <li>Vitamin A</li>
+            <li>Beta karoten</li>
+            <li>Polifenol</li>
+            <li>Kalsium</li>
+          </ul>
+
+          <h4>Manfaat Tradisional</h4>
+
+          <ul>
+            <li>Membantu menjaga kesehatan mata</li>
+            <li>Membantu menjaga kesehatan tulang</li>
+            <li>Membantu meningkatkan daya tahan tubuh</li>
+            <li>Membantu mengontrol gula darah</li>
+          </ul>
+
+          <h4>Cara Penggunaan</h4>
+
+          <p>
+            Buah ceplukan dapat dimakan langsung atau diolah menjadi jus dan teh herbal.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- PASAK BUMI -->
+      <div class="herbal-card">
+
+        <img src="pasak_bumi.png">
+
+        <div class="content">
+
+          <h3>4. Pasak Bumi</h3>
+
+          <h4>Deskripsi</h4>
+
+          <p>
+            Pasak bumi atau tongkat ali merupakan tanaman herbal terkenal dari Kalimantan yang digunakan untuk menjaga stamina dan vitalitas tubuh.
+          </p>
+
+          <h4>Kandungan Senyawa</h4>
+
+          <ul>
+            <li>Eurycomanone</li>
+            <li>Quassinoid</li>
+            <li>Alkaloid</li>
+            <li>Antioksidan alami</li>
+          </ul>
+
+          <h4>Manfaat Tradisional</h4>
+
+          <ul>
+            <li>Membantu menjaga stamina tubuh</li>
+            <li>Membantu meningkatkan energi</li>
+            <li>Membantu mengurangi stres</li>
+            <li>Membantu menjaga kebugaran tubuh</li>
+          </ul>
+
+          <h4>Cara Penggunaan</h4>
+
+          <p>
+            Akar pasak bumi direbus lalu air rebusannya diminum sebagai ramuan herbal tradisional.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="referensi">
+
+    <h2>Referensi</h2>
+
+    <div class="referensi">
+
+      <a href="https://bajakahborneo.id/manfaat-ajaib-akar-bajakah-rahasia-kesehatan-alami-dari-hutan-borneo/" target="_blank">
+        https://bajakahborneo.id/manfaat-ajaib-akar-bajakah-rahasia-kesehatan-alami-dari-hutan-borneo/
+      </a>
+
+      <a href="https://bajakahborneo.id/manfaat-akar-kuning-rahasia-herbal-kalimantan-untuk-kesehatan-optimal/" target="_blank">
+        https://bajakahborneo.id/manfaat-akar-kuning-rahasia-herbal-kalimantan-untuk-kesehatan-optimal/
+      </a>
+
+      <a href="https://www.halodoc.com/artikel/15-manfaat-buah-ciplukan-dan-cara-mengolahnya" target="_blank">
+        https://www.halodoc.com/artikel/15-manfaat-buah-ciplukan-dan-cara-mengolahnya
+      </a>
+
+      <a href="https://hotelier.id/studi/pasak-bumi/#google_vignette" target="_blank">
+        https://hotelier.id/studi/pasak-bumi/#google_vignette
+      </a>
+
+    </div>
+
+    <div class="biodata" id="penulis">
+
+      <h2>Biodata Penulis</h2>
+
+      <p><b>Nama :</b> Grenalda Paskadila Anmaren</p>
+      <p><b>NIM :</b> 2456202007</p>
+      <p><b>Jurusan :</b> Rekayasa Komputer</p>
+      <p><b>Semester :</b> IV (Empat)</p>
+      <p><b>Kelas :</b> Pagi</p>
+      <p><b>Mata Kuliah :</b> Interaksi Manusia dan Komputer</p>
+      <p><b>Dosen Pengampu :</b> Heni Ermewaningsih, S.Kom., M.Kom.</p>
+
+      <br>
+
+      <p>
+        Institut Teknologi Keling Kumang<br>
+        Sekadau, Kalimantan Barat, Indonesia.<br>
+        2026.
+      </p>
+
+    </div>
+
+  </section>
+
+  <section id="penutup">
+
+    <h2>Penutup</h2>
+
+    <div class="intro">
+
+      <p>
+        Hutan Kalimantan memiliki kekayaan alam yang sangat luar biasa, termasuk berbagai tanaman herbal tradisional yang telah dimanfaatkan masyarakat sejak dahulu. Tanaman seperti akar bajakah, akar kuning, pasak bumi, hingga sirih hutan menjadi bukti bahwa hutan Kalimantan menyimpan banyak potensi alami yang bermanfaat bagi kesehatan.
+      </p>
+
+      <br>
+
+      <p>
+        Selain tanaman yang telah dibahas, masih banyak lagi jenis tumbuhan herbal lainnya yang belum dikenal secara luas. Kekayaan alam ini perlu dijaga dan dilestarikan agar dapat terus dimanfaatkan oleh generasi mendatang sekaligus menjadi bagian penting dari warisan budaya Indonesia.
+      </p>
+
+      <br>
+
+      <p>
+        Penulis mengucapkan terima kasih kepada semua pihak yang telah mendukung penyusunan website ini. Penulis juga menyadari bahwa masih terdapat kekurangan dalam isi maupun tampilan website, sehingga kritik dan saran yang membangun sangat diharapkan untuk pengembangan yang lebih baik di masa mendatang.
+      </p>
+
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 Warisan Herbal dari Hutan Kalimantan
+  </footer>
+
+</body>
+
+</html>
